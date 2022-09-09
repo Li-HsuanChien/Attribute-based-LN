@@ -1,0 +1,38 @@
+attention_probs_dropout_prob: 0.1
+hidden_act: gelu
+hidden_dropout_prob: 0.1
+hidden_size: 768
+initializer_range: 0.02
+intermediate_size: 3072
+layer_norm_eps: 1e-12
+max_position_embeddings: 512
+max_sen_embeddings: 512
+num_attention_heads: 12
+num_hidden_layers: 2
+vocab_size: 30522
+output_attentions: False
+output_hidden_states: False
+use_return_dict: False
+usr_attr_dim: 768
+prd_attr_dim: 768
+
+usr_dim: 200
+prd_dim: 200
+#usr_dim: 384
+#prd_dim: 384
+attr_dim: 200
+dropout: 0.0
+embed_dim: 300
+words_dim: 300
+#embed_dim: 768
+#words_dim: 768
+pre_pooling_dim: 50
+bidirectional: True
+word_hidden_dim: 200
+sent_hidden_dim: 200
+pre_classifier_dim: 50
+
+
+trunc: 'both'
+trunc_length: 512
+
