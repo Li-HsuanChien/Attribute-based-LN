@@ -47,7 +47,7 @@ if __name__ == '__main__':
     args = parse_args()
     cfg_file = "cfgs/hietransformers.yml"
     with open(cfg_file, 'r') as f:
-        yaml_dict = yaml.load(f)
+        yaml_dict = yaml.load(f, Loader=yaml.FullLoader)
 
     args_dict = edict({**yaml_dict, **vars(args)})
     config.add_edit(args_dict, __C)
